@@ -218,6 +218,17 @@ img {
     margin: 1rem 0;
 }
 /* third-section */
+.third-section {
+    position: relative;
+}
+hr {
+    border: 2px dashed #F9234D;
+    width: 800px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    left: -15.5%;
+}
 .circle-date {
     height: 150px;
     width: 150px;
@@ -227,6 +238,11 @@ img {
     justify-content: center;
     align-items: center;
     border: 2px dashed #F9234D;
+}
+.timeline {
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
 }
 .active {
     background-color: var(--extra-color);
@@ -419,5 +435,26 @@ time {
     }
     .schedule-img {
         margin: 2rem 0;
+    }
+    hr {
+        display: none;
+    }
+}
+/* ipad pro responsive */
+@media screen and (max-width:1024px) {
+    hr {
+        left: -290px;
+    }
+    .ipad-column {
+        flex-direction: column;
+    }
+    .foot-links {
+        margin: 1.5rem 0;
+    }
+    .foot-links h3 {
+        text-align: center;
+    }
+    .list {
+        margin-left: 1rem;
     }
 }
