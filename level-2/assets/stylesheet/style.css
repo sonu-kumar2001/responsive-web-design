@@ -130,7 +130,7 @@ img {
     color: #ffffff;
 }
 .list-item {
-    margin-left: 30px;
+    margin-left: 1.9rem;
 }
 .list-item a {
     text-transform: uppercase;
@@ -141,6 +141,13 @@ img {
 .list-button a {
     text-transform: capitalize;
     font-size: 1.2rem;
+}
+/* navbar */
+.toggle {
+    display: none;
+}
+label {
+    display: none;
 }
 /* button */
 .btn {
@@ -222,7 +229,7 @@ img {
     position: relative;
 }
 hr {
-    border: 2px dashed #F9234D;
+    border-top: 2px dashed #F9234D;
     width: 800px;
     position: absolute;
     transform: rotate(90deg);
@@ -438,6 +445,41 @@ time {
     }
     hr {
         display: none;
+    }
+
+    /* hamburger-menu */
+    .nav {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding-top: 120px;
+    }
+    .logo {
+        position: relative;
+        z-index: 1;
+    }
+    label {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 32px;
+    }
+    .toggle:checked ~ label .fa-bars:before {
+        content: "\f00d";
+    }
+    .toggle:checked ~ .nav {
+        display: inline-block;
+    }
+    .direction-col {
+        flex-direction: column;
+    }
+    .list-item {
+        margin: 16px 0;
     }
 }
 /* ipad pro responsive */
