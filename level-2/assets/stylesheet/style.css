@@ -446,7 +446,15 @@ time {
     hr {
         display: none;
     }
-
+    .border-box {
+        background-color: var(--section-color);
+        box-shadow: 0 0 7px 2px #a1c5fc;
+        padding: 20px 8px;
+    }
+    .timeline {
+        background-color: var(--section-color);
+    }
+    
     /* hamburger-menu */
     .nav {
         display: none;
